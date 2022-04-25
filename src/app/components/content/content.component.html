@@ -1,0 +1,27 @@
+<!-- <h1>Hello World!</h1> -->
+
+<!-- card -->
+<div class="contairner" >
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+    <div class="col" *ngFor = "let item of listadeOpcoesDeMenu">
+      <div class="card h-100">
+        <img src="{{item.imagem}}" class="card-img-top" alt="comida">
+        <div class="card-body">
+          <a class="card-title" routerLink="/comida"></a>
+          <p class="card-text">{{item.titulo}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    
+   <!-- <div class="col">
+      <div class="card h-100">
+       <img src="assets/refri.jpg" class="card-img-top" alt="bebida">
+        <div class="card-body">
+          <a class="card-title" routerLink="bebida">Bebidas</a>
+          <p class="card-text" >...</p>
+       </div>
+      </div>
+    </div>    
+  </div>
+</div> -->

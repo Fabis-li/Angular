@@ -1,0 +1,15 @@
+<div class="contairner" >
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      <div class="col" *ngFor = "let item of listaComida">
+        <div class="card h-100">
+          <img src="{{item.imagem}}" class="card-img-top" alt="comida">
+          <div class="card-body">
+            <a class="card-title" >{{item.ref}}</a>
+            <p class="card-text">{{item.preco}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+
+

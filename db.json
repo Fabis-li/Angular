@@ -1,0 +1,37 @@
+{
+    "comida": [
+        {
+            "ref":"Macarrão",
+            "preco":"R$ 10,00",
+            "imagem":"assets/macarrao.jpg"
+        },
+        {
+            "ref":"Comida",
+            "preco":"R$ 20,00",
+            "imagem":"assets/virado.jpg"
+        },
+        {
+            "ref":"Lanches",
+            "preco":"R$ 25,00",
+            "imagem":"assets/lanche.jpg"
+        }
+    ],
+    "bebida": [
+        {
+            "bebida":"Refrigerante",
+            "preco":"R$ 7,00",
+            "imagem":"assets/refri.jpg"
+        },
+        {
+            "bebida":"Agua",
+            "preco":"R$ 3,00",
+            "imagem":"assets/agua.webp"
+        },
+        {
+            "bebida":"Suco",
+            "preco":"R$ 10,00",
+            "imagem":"assets/suco.jpg"
+        }
+    ]
+    
+}
