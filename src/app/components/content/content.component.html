@@ -1,7 +1,35 @@
-<!-- <h1>Hello World!</h1> -->
+<main class="container mt-5"> 
+  <div class="row mb-2 ">
+    <div class="col-md-6" *ngFor=" let item of listadeOpcoesDeMenu ">
+
+      <div 
+        (click)="redirecionar(item.path)"
+        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">         
+          <h3 class="mb-0">{{item.titulo}}</h3>         
+          <p class="card-text mb-auto">
+            {{  item.descricao }}
+          </p>
+          <a href="#" class="stretched-link" >Adicionar ao pedido</a>
+        </div>
+        <div class="col-auto ">
+          <img src="{{item.imagem}}" width="200"  height="200" /> 
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+
+
+
 
 <!-- card -->
-<div class="contairner" >
+<!-- <div class="contairner" >
   <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
     <div class="col" *ngFor = "let item of listadeOpcoesDeMenu">
       <div class="card h-100">
@@ -13,15 +41,5 @@
       </div>
     </div>
   </div>
-</div>    
-   <!-- <div class="col">
-      <div class="card h-100">
-       <img src="assets/refri.jpg" class="card-img-top" alt="bebida">
-        <div class="card-body">
-          <a class="card-title" routerLink="bebida">Bebidas</a>
-          <p class="card-text" >...</p>
-       </div>
-      </div>
-    </div>    
-  </div>
-</div> -->
+</div>     -->
+ 

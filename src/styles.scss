@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+.navabr-container {
+    nav-item {
+        color: var(--bs-gray-800) !important;
+
+        &.active{
+            color: var(--bs-red) !important;
+        }
+    }
+}

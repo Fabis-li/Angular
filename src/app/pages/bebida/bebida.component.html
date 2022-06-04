@@ -1,13 +1,24 @@
-<div class="contairner" >
-    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-      <div class="col" *ngFor = "let item of listaDeBedidas">
-        <div class="card h-100">
-          <img src="{{item.imagem}}" class="card-img-top" alt="comida">
-          <div class="card-body">
-            <a class="card-title" >{{item.bebida}}</a>
-            <p class="card-text">{{item.preco}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>    
+
+<main class="container mt-5"> 
+  <div class="row mb-2 ">
+    <button (click)="adicionarBebidas()">adicionar</button>
+    <NGF-item-cardapio 
+      *ngFor=" let bebida of  listaBedida"
+      [item]="bebida"
+      (adicionaAoPedido)="adicionarBebida($event)"
+      (adicionaItensAoPedido)="adicionarBebidaComQuantidade($event)"
+    >
+  </NGF-item-cardapio>
+   
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+

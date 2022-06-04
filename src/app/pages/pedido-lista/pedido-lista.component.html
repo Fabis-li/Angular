@@ -1,0 +1,35 @@
+<main class="container mt-5"> 
+    <div *ngIf="listaItensPedido.length === 0" class="row">
+        <p>Não há pedidos adicionados</p>
+    </div>
+
+    <div *ngIf="listaItensPedido.length > 0" class="row mb-2">
+        <div class="col-4">
+            <a class="btn btn-primary my-2" (click)="removerTudo()">remover tudo</a>
+        </div>
+    </div>
+
+
+    <div class="row mb-2 ">
+        <div class="col-md-6" *ngFor="let item of listaItensPedido">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">         
+                  <h3 class="mb-0">{{item?.titulo}}</h3>         
+                  <p class="card-text mb-auto">
+                    {{ item?.descricao }}
+                  </p>
+                  <h5 class="card-text text-success mb-auto ">
+                    {{ item?.preco }}
+                  </h5>
+                  <a class="btn btn-primary my-2" (click)="removerItem(item)">Remover</a>
+              </div>
+                <div class="col-auto ">
+                  <img src="{{item?.imagem}}" width="200"  height="200" /> 
+                </div>
+            </div>
+          </div>    
+        
+      </div>
+   
+  </main>
+  

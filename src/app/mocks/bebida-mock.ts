@@ -1,20 +1,26 @@
-import { Bebida } from "../models/drink.model";
+import { IBebida } from "../models/bebida.model";
 
-export const BEBIDA_MOCK: Bebida[] =[
+export const LISTA_BEBIDA_MOCK: IBebida[] =[
     {
-        bebida:"Refrigerante",
+        id: 100,
+        titulo:"Bebida 1",        
+        imagem: "assets/refri.jpg",
+        descricao: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
         preco: "R$ 7,00",
-        imagem: "assets/refri.jpg"
     },
     {
-        bebida:"Agua",
+        id:101,
+        titulo:"Bebida 2",        
+        imagem: "assets/agua.webp",
+        descricao: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
         preco: "R$ 3,00",
-        imagem: "assets/agua.webp"
     },
     {
-        bebida:"Suco",
-        preco: "R$ 10,00",
-        imagem: "assets/suco.jpg"
+        id: 102,
+        titulo:"Bebida 3",        
+        imagem: "assets/suco.jpg",
+        descricao: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+        preco: "R$ 10,00"
     },
 
-]
+];

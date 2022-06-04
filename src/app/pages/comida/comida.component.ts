@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { COMIDA_MOCK } from 'src/app/mocks/comida-mock';
-import { Comida } from 'src/app/models/food.model';
+import { IComida } from 'src/app/models/comida.model';
+import { ComidaService } from 'src/app/services/comida.service';
+import { PedidoService } from 'src/app/services/pedido.service';
 
 
 @Component({
@@ -10,19 +10,27 @@ import { Comida } from 'src/app/models/food.model';
   styleUrls: ['./comida.component.scss']
 })
 export class ComidaComponent implements OnInit {
-  listaComida: Comida[] = COMIDA_MOCK;
-    
-
-  
+  listaComida: IComida[] = [];  
 
 
-  constructor(private http:HttpClient) { }
+  constructor(
+    private comidaService: ComidaService,
+    private pedidoService: PedidoService
+    ) { }
 
   ngOnInit(): void {
-    this.http.get< Comida[]>('http://localhost:3000/comida',)
-    .subscribe((resultado) => {
-      this.listaComida = resultado;
-    })
+    this.comidaService.devolverComida()
+      .subscribe((resultado:IComida[])=>{
+        this.listaComida = resultado
+      })
   }
 
+  adicionarComida(comida: IComida) {
+    this.pedidoService.adicionarItemPedido(comida);
+  }
+
+  adicionarComidaComQuantidade(itemComQuantidade: any){
+    this.pedidoService.adicionarItensPedido(itemComQuantidade.item, itemComQuantidade.quantidade);
+  }
 }
+

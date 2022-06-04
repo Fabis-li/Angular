@@ -1,20 +1,26 @@
-import { Comida } from "../models/food.model"
+import { IComida } from "../models/comida.model"
 
-export const COMIDA_MOCK: Comida[] = [
+export const LISTA_COMIDA_MOCK: IComida[] = [
     { 
-        ref:"Macarrão", 
-        preco: "R$ 10,00",
-        imagem:"assets/macarrao.jpg"  
+        id: 100,
+        titulo:"Macarrão", 
+        imagem:"assets/macarrao.jpg" ,
+        descricao: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+        preco: "R$ 10,00" 
     },
     { 
-        ref:"Comida", 
-        preco: "R$ 20,00",
-        imagem:"assets/virado.jpg"  
+        id: 101,
+        titulo:"Comida",        
+        imagem:"assets/virado.jpg",
+        descricao: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+        preco: "R$ 20,00"
     },
     { 
-        ref:"Lanches", 
-        preco: "R$ 25,00",
-        imagem:"assets/lanche.jpg"  
+        id: 102,
+        titulo:"Lanches",         
+        imagem:"assets/lanche.jpg",
+        descricao: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+        preco: "R$ 25,00", 
     },
 ]
 

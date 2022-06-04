@@ -5,9 +5,12 @@
         <span class="fs-4">NG-Food</span>
       </a>
   
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a routerLink="/comida">Cardápio</a></li>
-        <li class="nav-item"><a routerLink="/bebida">Bebidas</a></li>
+      <ul class="navabr-container nav nav-pills">
+        <li class="nav-item"><a routerLinkActive="active" routerLink="">Cardápio</a></li>
+        <li class="nav-item"><a routerLinkActive="active" routerLink="/comida">Comida</a></li>
+        <li class="nav-item"><a routerLinkActive="active" routerLink="/bebida">Bebidas</a></li>
+        <li class="nav-item"><a routerLinkActive="active" routerLink="/pedido">
+          <span class="badge badge-pill btn btn-primary">{{buscaTotalItem() }} </span> Pedido</a></li>
         
       </ul>
     </header>

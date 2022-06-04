@@ -1,37 +1,76 @@
 {
-    "comida": [
-        {
-            "ref":"Macarrão",
-            "preco":"R$ 10,00",
-            "imagem":"assets/macarrao.jpg"
-        },
-        {
-            "ref":"Comida",
-            "preco":"R$ 20,00",
-            "imagem":"assets/virado.jpg"
-        },
-        {
-            "ref":"Lanches",
-            "preco":"R$ 25,00",
-            "imagem":"assets/lanche.jpg"
-        }
-    ],
-    "bebida": [
-        {
-            "bebida":"Refrigerante",
-            "preco":"R$ 7,00",
-            "imagem":"assets/refri.jpg"
-        },
-        {
-            "bebida":"Agua",
-            "preco":"R$ 3,00",
-            "imagem":"assets/agua.webp"
-        },
-        {
-            "bebida":"Suco",
-            "preco":"R$ 10,00",
-            "imagem":"assets/suco.jpg"
-        }
-    ]
-    
+  "comida": [
+    {
+      "id": 1,
+      "titulo": "Macarrão",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00",
+      "imagem": "assets/macarrao.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Comida",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 20,00",
+      "imagem": "assets/virado.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Lanches",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 25,00",
+      "imagem": "assets/lanche.jpg"
+    }
+  ],
+  "bebida": [
+    {
+      "id": 1,
+      "titulo": "Refrigerante",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 7,00",
+      "imagem": "assets/refri.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Suco",
+      "imagem": "assets/suco.jpg",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00"
+    },
+    {
+      "id": 3,
+      "titulo": "Agua",
+      "imagem": "assets/suco.jpg",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00"
+    },
+    {
+      "id": 4,
+      "titulo": "kisuke",
+      "imagem": "assets/suco.jpg",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00"
+    },
+    {
+      "id": 5,
+      "titulo": "coca 2l",
+      "imagem": "assets/suco.jpg",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00"
+    },
+    {
+      "id": 6,
+      "titulo": "guarana 2l",
+      "imagem": "assets/suco.jpg",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00"
+    },
+    {
+      "id": 7,
+      "titulo": "fanta laranja",
+      "imagem": "assets/suco.jpg",
+      "descricao": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus, aut quo, sit temporibus, explicabo distinctio aperiam cupiditate incidunt suscipit quam corrupti? Fuga tempore rem incidunt, numquam vitae voluptates dolorem.",
+      "preco": "R$ 10,00"
+    }
+  ]
 }

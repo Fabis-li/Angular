@@ -1,11 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MENU_MOCK } from 'src/app/mocks/menu-mock';
+import { IMenu } from 'src/app/models/menu.model';
 
-interface Menu {
-  titulo: string;
-  imagem: string;
-  path: string;
-}
+
 
 
 @Component({
@@ -14,24 +12,18 @@ interface Menu {
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  listadeOpcoesDeMenu: Menu[] = [
-    {
-      titulo: "Comida",
-      imagem: "assets/comida.jpg",
-      path: "/comida",
-    },
-    {
-      titulo: "Bebida",
-      imagem: "assets/refri.jpg",
-      path: "/bebida",
-    }
-  ]
+  listadeOpcoesDeMenu: IMenu[] = MENU_MOCK;
+    
+  
 
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
     
   }
 
+  redirecionar(path: string) {
+    this.route.navigateByUrl(path);
+  }
 }
